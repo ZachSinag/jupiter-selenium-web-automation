@@ -10,7 +10,7 @@
 ```
  mvn clean test -DtestngFile="jupiterRun.xml" -Denvironment="prod" -Dbrowser="chrome" 
 ```
-To run on different browser: `edge` or `safari` (non-local)
+To run on different browser: `edge` (non-local)
 ```
  mvn clean test -DtestngFile="jupiterRun.xml" -Denvironment="prod" -Dbrowser="edge" 
 ```
