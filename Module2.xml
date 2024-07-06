@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="jupiter.listener"/>
+    </listeners>
+    <test thread-count="1" parallel="classes" name="Planit Jupiter Web">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="environment" value="prod"/>
+        <classes>
+
+            <class name="jupiter.module2.TC2_01"/>
+<!--            <class name="jupiter.module2.TC2_02"/>-->
+<!--            <class name="jupiter.module2.TC2_03"/>-->
+
+
+        </classes>
+    </test>
+</suite>

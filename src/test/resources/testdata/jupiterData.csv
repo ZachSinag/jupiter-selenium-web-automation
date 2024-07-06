@@ -1,0 +1,9 @@
+email,forename,message,notification_modal,forename_error_message,email_error_message,error_message_box,fluffy_bunny_price,valentines_bear_price,stuff_frog_price,environment,identifier
+demotest123@blondmail.com,Demo Test,This is for demo automation testing,We welcome your feedback - tell it how it is.,,,,,,,all,valid_contact_us
+mail_incorrect.com,Invalid Email,This is for demo automation testing,We welcome your feedback - but we won't get it unless you complete the form correctly.,,Please enter a valid email,,,,,all,invalid_email_contact_us
+,,,We welcome your feedback - but we won't get it unless you complete the form correctly.,Forename is required,Email is required,Message is required,,,,all,missing_fields_contact_us
+demotest123@blondmail.com,Demo Test,This is for demo automation testing,"Thanks Demo Test, we appreciate your feedback.",,,,,,,all,success_application
+mail_incorrect.com,Invalid Email,This is for demo automation testing,We welcome your feedback - Unable to submit please enter the correct email format,,Please enter a valid email,,,,,all,submit_invalid
+,,,"×
+Your cart is empty - there's nothing to see here.",,,,,,,all,empty_cart
+,,,,,,,9.99,14.99,10.99,all,cart_price
