@@ -12,7 +12,7 @@
 ```
 5. To run on different browser: `edge` (non-local)
 ```
- mvn clean test -DtestngFile="jupiterRun.xml" -Denvironment="prod" -Dbrowser="edge" 
+ mvn clean test -DtestngFile="JupiterRun.xml" -Denvironment="prod" -Dbrowser="edge" 
 ```
 6. Results will be shown on console logs, but test evidence can also be viewed by saving the whole folder  `/Automation Reports/index.html`.
 
