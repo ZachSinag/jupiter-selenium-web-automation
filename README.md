@@ -21,7 +21,7 @@ To run on different browser: `edge` (non-local)
 
 ### Jupiter Planit Web -  Test Coverage:
 - MODULE 1: CONTACT PAGE VALIDATE ERROR MESSAGE
-- MODULE 2: CONTACT PAGE SUBMIT APPLCIATION
+- MODULE 2: CONTACT PAGE SUBMIT APPLICATION
 - MODULE 3 : CART PAGE VALIDATE PRODUCTS
 
 -----------------
