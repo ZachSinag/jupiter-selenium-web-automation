@@ -36,8 +36,8 @@ public class BrowserManager extends listener {
 //    @BeforeSuite
     @BeforeMethod
     public void setUp(@Optional("chrome") String browser, @Optional("prod") String environment) {
-        this.browser = browser;
-        this.env = environment;
+        BrowserManager.browser = browser;
+        env = environment;
         driver = getDriver(browser, environment);
     }
 
@@ -113,7 +113,7 @@ public class BrowserManager extends listener {
             try {
                 driver = (WebDriver) clazz.getField("driver").get(testObject);
             } catch (Exception e1) {
-                // Handle exception
+                Jupiter.failedLogs("Failed to load Driver, Please check BrowserManager");
             }
             try {
                 File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -124,8 +124,6 @@ public class BrowserManager extends listener {
 
             extentTest.get().fail("<b><font color=red>" + "Screenshot of failure" + "</font></b>",
                     MediaEntityBuilder.createScreenCaptureFromPath(path2 + methodName + "_" + dateName + ".png").build());
-
-            driver.quit();
 
             String logText = "<b>" + methodName + " Failed</b>";
             Markup m = MarkupHelper.createLabel(logText, ExtentColor.RED);
